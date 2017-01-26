@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Kumar+One" rel="stylesheet">
+<style>
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 auto;
+  height:200px;
+  width:90%;
+  background-color: #17448c;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+img{
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  }
+h1 {
+  text-align: center;
+  font-size: 80px;
+  color: black;
+  margin: 0;
+  font-family:  "Times New Roman", Times, serif;
+}
+h2 {
+  text-align:center;
+  color: black;
+  margin:0px 1 7px 0;
+  font-size:50px;
+  font-family:  "Times New Roman", Times, serif;
+
+}
+p {
+  color: rgba(255,255,255,1);
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 20px;
+  font-family: 'Kumar One', cursive;
+  line-height: 30px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 200px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{background-image:url("http://i.imgur.com/6QQ732s.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/3rwGIQ8.gif");
+}
+.dessert{
+  background-image: url("http://i.imgur.com/gNIGUhh.jpg");
+}
+.price {
+  float: right;
+}
+.button {
+    background-color: #0e8765;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 100px;
+    margin: 0px 0 0px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<img src="http://i.imgur.com/WbVJgEP.jpg">
+<h1>LUXURY</h1><h2>FRANCHISE</h2>
+<h1>BLUE HENS </h1>
+<div class="first">
+  <p> <span class="price"><button class="button">Buy</button></span><br />
+  <small>For many would be restaurateurs, a franchise presents the perfect opportunity to open their own restaurant. There are a lot of benefits of restaurant franchises, such as instant name recognition and built in marketing. However, buying a restaurant franchise is not always as easy (or as cheap) as one might think. Here is a step-by-step guide to finding and buying a .</small></p>
+</div>
+
+<div class="second">
+  <p>pastrami boudin tongue <span class="price"><button class="button">Sell</button></span><br />
+  <small>Restaurant franchises are expensive ventures. Cost more than anything else will limit your choices when it comes to buying a restaurant franchise. Experience is another important factor in opening a restaurant franchise. Parent companies (franchisors) don’t hand out the keys to a franchise unit to just anyone. Consider the following:.</small></p>
+</div>
+
+<div class="dessert">
+  <p>fruitcake marzipan pudding dragee <span class="price"><button class="button">Rent</button></span><br />
+  <small>Once you get through the initial process of being approved for a restaurant franchise and secure your financing, you will sign a lengthy contract with the franchisor. Review the contract with a fine tooth comb before signing on the dotted line. Most importantly, know what can happen if the franchise fails. Are you locked into paying the franchisor a set amount of money each month or year, regardless of success? Who owns the equipment? Will you get any of your investment money back? Don’t assume that because it is a chain it will be an instant success. It still takes hard work and patience.
+
+Buying into a restaurant franchise offers many benefits. However, it does require significant capital and comes with many legal strings.  For those looking for a less costly investment and more creative freedom, opening up an independent .</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
